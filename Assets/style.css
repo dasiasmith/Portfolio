@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --back: black;
+    --yellow: #ffff00;
+}
+
+::selection {
+    background-color: var(--yellow);
+    color: gray;
+}
+html {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values 
+    for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: ttbluescreens;
+    src:url(TT-Bluescreens-Bold.ttf);
+}
+
+body {
+font-family: ttbluescreens;
+color: var(--yellow);
+background-image: url(Asset\ 11.png);
+background-repeat: no-repeat;
+background-color: var(--back);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+
+h1 {
+    /* 30rem = 300px (30 * 10px) */
+    font-size: 30rem;
+}
+
+h2{
+    font-size: 3.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ul {
+    font-size: 4.5rem;
+}
+
+p {
+    font-size: 3.1rem;
+}
+
+h3 {
+    font-size:8rem;
+    background-color: white;
+    color: black;
+    width: 716px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-size: 3.1rem;
+}
+
+h5 {
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+    height:fit-content;
+    width:716px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*Page Links*/
+a {
+    color: var(--yellow);
+    text-decoration: none; /* Removes ugly underline from links*/
+}
+
+section {
+    display: inline-block;
+    width: 65%;
+    padding-top: 7%;
+}
+
+#work {
+    display:inline-block;
+    width: 65%;
+    padding-bottom: 1%;
+}
+#proof {
+    display: inline-block;
+    width: 100%;
+    padding: auto;
+}
+
+#resume {
+    float: center;
+}
+
+#text {
+    margin-left: auto;
+    margin-right: auto;
+}
+aside {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    float: left;
+    width: 50%;
+    padding: 5px;
+    position: relative;
+    margin: auto;
+}
+
+.card-column img {
+    width: 487px;
+    height: 327px;
+    object-fit: cover;
+}
+
+.row::after {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.textblock {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--yellow);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.textblock.hover {
+    box-shadow:blue;
+}
+
+footer {
+    display: inline-block;
+    padding: 20px;
+}
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        width: 75%;
+    }
+
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
