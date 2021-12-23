@@ -154,7 +154,7 @@ a {
     text-align: center;
 }
 
-hr.rounded {
+#workHr {
     border-top: 6px solid var(--yellow);
     border-radius: 5px;
 }
@@ -262,18 +262,23 @@ hr.rounded {
 	opacity: 1;
 }
 
+#resume h1 {
+    color: var(--back);
+}
+
+#resumeHr {
+    border-top: 6px solid var(--back);
+}
+
 footer {
-    display: inline-block;
     padding: 20px;
+    color: var(--back);
+    text-align: center;
 }
 footer ul {
     list-style-type: none;
 }
 
-footer ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
 
 @media screen and (min-width: 768px) {
     .card-column {
