@@ -14,7 +14,7 @@ The following animation shows the web application's appearance and functionality
 
 ## Credits
 
-![Responsive Hover Cards](https://codepen.io/francisco-kataldo/pen/LBBryV?editors=1100)
+[Responsive Hover Cards](https://codepen.io/francisco-kataldo/pen/LBBryV?editors=1100)
 
 ## License
 
