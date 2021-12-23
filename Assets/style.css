@@ -27,9 +27,7 @@ html {
 body {
 font-family: ttbluescreens;
 color: var(--yellow);
-background-image: url(Asset\ 11.png);
-background-repeat: no-repeat;
-background-color: var(--back);
+background: linear-gradient(rgb(0, 0, 0), #3a3a35, #ffff00);
 
 }
 
@@ -42,7 +40,7 @@ h6
 
 h1 {
     /* 30rem = 300px (30 * 10px) */
-    font-size: 30rem;
+    font-size: 10rem;
 }
 
 h2{
@@ -56,7 +54,7 @@ ul {
 }
 
 p {
-    font-size: 3.1rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -105,77 +103,59 @@ header nav ul li {
     margin-left: 25px;
 }
 
+.navbar-nav > li {
+    float: left;
+    position: relative;
+  }
+.navbar-light .navbar-nav .active a::after {
+    border-bottom: 5px solid #ffff00;
+    bottom: -10px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.active a { 
+    color: #ffff0096; 
+}
+a:hover { 
+    color: #ffff0096; 
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
 /*Page Links*/
 a {
     color: var(--yellow);
     text-decoration: none; /* Removes ugly underline from links*/
 }
 
-section {
-    display: inline-block;
-    width: 65%;
-    padding-top: 7%;
-}
-
-#work {
-    display:inline-block;
-    width: 65%;
-    padding-bottom: 1%;
-}
-#proof {
-    display: inline-block;
-    width: 100%;
-    padding: auto;
-}
-
-#resume {
-    float: center;
-}
-
-#text {
-    margin-left: auto;
-    margin-right: auto;
-}
-aside {
-    float: left;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-}
-
-.card-column {
-    flex: 1 0 100%;
-    float: left;
-    width: 50%;
-    padding: 5px;
-    position: relative;
-    margin: auto;
-}
-
-.card-column img {
-    width: 487px;
-    height: 327px;
-    object-fit: cover;
-}
-
-.row::after {
+#about{
+    padding: 30px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px 0px 20px;
 }
 
-.textblock {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: var(--yellow);
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+#cutie{
+    align-items: right;
 }
 
-.textblock.hover {
-    box-shadow:blue;
+#aboutMe{
+    display: flex;
+    display: block;
+    max-width: 560px;
+    align-items: left;
+}
+
+#work{
+    text-align: center;
+}
+
+hr.solid {
+    border-top: 5px solid var(--yellow);
 }
 
 footer {
