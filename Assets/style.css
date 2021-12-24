@@ -270,6 +270,26 @@ a {
     border-top: 6px solid var(--back);
 }
 
+#contact h1 {
+    color: var(--back);
+}
+
+#contactHr {
+    border-top: 6px solid var(--back);
+}
+#contact {
+    align-content: center;
+}
+
+ul {
+    list-style-type: none;
+    align-content: center;
+}
+#icons {
+    display: table; 
+    margin: 0 auto;
+}
+
 footer {
     padding: 20px;
     color: var(--back);
