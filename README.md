@@ -1,6 +1,6 @@
 Portfolio
 
-## Task
+## About
 
 This web application demonstrates my first draft of my professional portfolio that will be builded on as the course progreses. This portfolio showcases current skills to potential
 employers with the hopes of eventually adding links to deployable web applications. The portfolio can be found at the following link: https://dasiasmith.github.io/Portfolio-1/
