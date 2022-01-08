@@ -281,10 +281,6 @@ a {
     align-content: center;
 }
 
-ul {
-    list-style-type: none;
-    align-content: center;
-}
 #icons {
     display: table; 
     margin: 0 auto;
@@ -300,7 +296,7 @@ footer ul {
 }
 
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .card-column {
         flex: 0 0 50%;
         max-width: 50%;
@@ -316,4 +312,4 @@ footer ul {
         flex: 0 0 50%;
         max-width: 50%;
     }
-}
+} */
