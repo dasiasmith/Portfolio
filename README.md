@@ -10,7 +10,7 @@ This portofolio utilizes html, CSS, javascript, flexbox, and media queries to sh
 
 The following animation shows the web application's appearance and functionality:
 
-![PortfolioScreenshot](./Assets/PortfolioScreenshot.PNG)
+![PortfolioScreenshot](./Assets/Capture.PNG)
 
 ## Credits
 
