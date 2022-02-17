@@ -163,6 +163,16 @@ a {
     border-radius: 5px;
 }
 
+.container.text-center.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-lg-4.col-md-4.col-sm-6.col-xs-12.container_img {
+  margin: 10px;
+}
+
 .container_img {
 	background-color: rgba(57, 62, 93, 0.7);
 	padding: 0;
