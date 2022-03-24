@@ -1,165 +1,50 @@
 <html lang = "en-us">
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="reset" href="Assets/css/reset.css">
     <title>Dasia Smith | Full Stack Developer</title>
 </head>    
 
 <body>
-    <header>
-        <h1>Hi I'm DASIA.</h1>
-        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-md">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<section class="wrapper">
+  
+    <!-- BEGIN: menu -->
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item  js-modify  active" data-target=".card" data-effect="zoom">Zoom out</li>
+        <li class="menu__item  js-modify" data-target=".card" data-effect="blur">Blur</li>
+        <li class="menu__item  js-modify" data-target=".card" data-effect="color">Colors</li>
+      </ul>
+    </nav>
+    <!-- END: menu -->
     
-                <div class="collapse navbar-collapse justify-content-end" id="main-nav-collapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"> <a href ="#about"> about me</a></li>
-                        <li class="nav-item"> <a href= "#work"> work</a></li>
-                        <li class="nav-item"> <a href="./Assets/Dasia B. Smith Resume.pdf" target="_blank"> resume</a></li>
-                        <li class="nav-item"> <a href= "./Assets/html/art.html"> art</a></li>
-                        <li class="nav-item"> <a href= "#contact"> contact</a></li>
-                    </ul>
-                </div>
-            </div>        
-        </nav>
-    </header>
+    <!-- BEGIN: card -->
+    <div class="card" data-effect="zoom">
+      <button class="card__save  js-save" type="button">
+        <i class="fa  fa-bookmark"></i>
+       </button>
+      <figure  class="card__image">
+        <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+      </figure>
+      <div class="card__header">
+        <figure class="card__profile">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Neil_Armstrong.jpg" alt="Short description">
+        </figure>
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Neil Armstrong</h3>
+        <p class="card__job">astronaut & engineer</p>
+        <p class="card__bio"> American astronaut, engineer, and the first person to walk on the Moon.</p>
+      </div>
+      <div class="card__footer">
+        <p class="card__date">Feb 10 2018</p>
+        <p class=""></p>
+      </div>
+    </div>
+    <!-- END: card -->
     
-    <main>
-        <section id="about">
-            <div class="col-12 col-md-3" id="cutie">
-                <img src="./Assets/images/AboutMe2.png" alt="Photo of Dasia" width="380" height="310">
-            </div>
-            <div class="col-12 col-md-9" id="AboutMe">
-                <h1>Bringing Creative Ideas to<br>LIFE</h1>
-                <p>
-                    Welcome to my page! My name is Dasia and I began my career journey wanting to become a graphic designer.
-                    I've always done art on the side but after joining a STEM club in high school and building cool models I went to school for engineering.
-                    After studying Civil Engineering at Georgia Tech I decided I wanted to combine my passions for product design and technical work 
-                    (and my love for the Yellow Jackets) into a new career path and enrolled in a full-stack bootcamp.
-                    <br>
-                    I'm interested in delving into both front end and back end roles while also combining art using creative technology in my spare time.
-                    Join me in the journey that is my portfolio and feel free to check out my art :)
-                </p>
-            </div>
-        </section>
-        <div id="work" class="container-fluid container text-center">
-            <div class="col-12 col-md-12">
-                <h1>work</h1>
-                <hr id="workHr" class="rounded">
-            </div>
-                <div class=" container text-center row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_img ">
-                        <div class="see_more text-center">
-                            <a href="https://github.com/jing-liu-778/Flix-and-Spill" target="_blank"><span id="click" class="lnr lnr-code"></span> </a>
-                            <a href="https://shielded-gorge-65326.herokuapp.com/" target="_blank"><span id="click" class="lnr lnr-rocket"></span></a>
-                        </div>
-                        <article class="text-left">
-                            <h2>'Flix and Spill</h2>
-                            <h4 class=hBody>A website that allow users to leave, comment, and like reviews for Netflix shows and movies</h4>
-                        </article>
-                        <img src="./Assets/images/FlixAndSpill.PNG" alt="Flix and spill homepage">
-                   </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_img ">
-                        <div class="see_more text-center">
-                            <a href="https://github.com/dasiasmith/Marvel-Vs-DC" target="_blank"><span id="click" class="lnr lnr-code"></span> </a>
-                            <a href="https://dasiasmith.github.io/Marvel-Vs-DC/" target="_blank"><span id="click" class="lnr lnr-rocket"></span></a>
-                        </div>
-                        <article class="text-left">
-                            <h2>MARVEL VS.<br>DC</h2>
-                            <h4 class=hBody>A website that comapres Marvel superheroes vs. DC superheroes utilizing a superhero API and IMDb movie rating API</h4>
-                        </article>
-                        <img src="./Assets/images/Homepage.png" alt="Marvel vs. DC homepage">
-                   </div>
-                   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_img">                      
-                        <div class="see_more text-center">
-                            <a href="https://github.com/dasiasmith/Weather-Dashboard" target="_blank"><span id="click" class="lnr lnr-code"></span></a>
-                            <a href="https://dasiasmith.github.io/Weather-Dashboard/" target="_blank"><span id="click" class="lnr lnr-rocket"></span></a>
-                        </div>
-                        <article class="text-left">
-                            <h2>WEATHER <br>DASHBOARD</h2>
-                            <h4 class=hBody>A website that allows users to input a city name and receive daily and 5-day forecast for that city</h4>
-                        </article>
-                        <img src="./Assets/images/WeatherApp.png" alt="Weather dashboard displaying forecast">
-                   </div>
-                   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_img">                      
-                        <div class="see_more text-center">
-                            <a href="https://github.com/dasiasmith/Password-Generator" target="_blank"><span id="click" class="lnr lnr-code"></span></a>
-                            <a href="https://dasiasmith.github.io/Password-Generator/" target="_blank"><span id="click" class="lnr lnr-rocket"></span></a>
-                        </div>
-                        <article class="text-left">
-                            <h2>PASSWORD GENERATOR</h2>
-                            <h4 class=hBody>A website that generates a passwored based on user preferences such as capitalization, special character, and numbers</h4>
-                        </article>
-                        <img src="./Assets/images/Password Generator.png" alt="Password generator displaying new user password">
-                   </div>
-                   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_img">
-                        <div class="see_more text-center">
-                            <a href="https://github.com/dasiasmith/Work-Day-Scheduler" target="_blank"><span id="click" class="lnr lnr-code"></span></a>
-                            <a href="https://dasiasmith.github.io/Work-Day-Scheduler/" target="_blank"><span id="click" class="lnr lnr-rocket"></span></a>
-                        </div>
-                        <article class="text-left">
-                            <h2>DAY PLANNER</h2>
-                            <h4 class=hBody>A website that allows users to schedule and track hourly events throughout the day</h4>
-                        </article>
-                        <img src="./Assets/images/Scheduler-Screenshot.png" alt="Day planner with user inputs as events">
-                 </div>
-                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_img">
-                        <div class="see_more text-center">
-                            <a href="https://github.com/dasiasmith/Coding-Quiz" target="_blank"><span id="click" class="lnr lnr-code"></span></a>
-                            <a href="https://dasiasmith.github.io/Coding-Quiz/" target="_blank"><span id="click" class="lnr lnr-rocket"></span></a>
-                        </div>
-                        <article class="text-left">
-                            <h2>CODING QUIZ</h2>
-                            <h4 class=hBody>An interactive application tha test users' knowledge on coding basics and allows users to store and view high scores</h4>
-                        </article>
-                        <img src="./Assets/images/CodingQuiz.png" alt="Example of quiz questions with high scores list">
-                 </div>
-                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_img">
-                       <div class="see_more text-center">
-                        <a href="https://github.com/dasiasmith/Note-Taker" target="_blank"><span id="click" class="lnr lnr-code"></span></a>
-                        <a href="https://afternoon-inlet-19317.herokuapp.com/" target="_blank"><span id="click" class="lnr lnr-rocket"></span></a>
-                       </div>
-                       <article class="text-left">
-                           <h2>NOTE TAKER</h2>
-                           <h4 class=hBody>Application that utilizes Express.js to save and retrieve input data from JSON files to create notes</h4>
-                       </article>
-                       <img src="./Assets/images/Note-Taker.gif" alt="Horiseon website homepage after code refractoring">
-                </div>
-                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_img">
-                        <div class="see_more text-center">
-                            <a href="https://github.com/dasiasmith/Horiseon" target="_blank"><span id="click" class="lnr lnr-code"></span></a>
-                            <a href="https://dasiasmith.github.io/Horiseon/" target="_blank"><span id="click" class="lnr lnr-rocket"></span></a>
-                        </div>
-                        <article class="text-left">
-                            <h2>HORISEON REFRACTOR</h2>
-                            <h4 class=hBody>Refractoring existing code for the Horiseon website to meet client design standards</h4>
-                        </article>
-                        <img src="./Assets/images/Horiseon.png" alt="Horiseon website homepage after code refractoring">
-                 </div>
-                </div>
-            </div>
-            
-            <div id="contact" class="container-fluid container text-center">
-                <div class="col-12 col-md-12">
-                    <h1>contact</h1>
-                    <hr id= "contactHr" class="rounded">
-                </div>
-                <div id="icons" class="icons row">
-                    <a href ="https://www.linkedin.com/in/dasia-smith/" target="_blank"><img src="./Assets/images/Circle_linkedin_icon.png" alt="LinkedIn Icon"></a>
-                    <a href= "https://github.com/dasiasmith" target="_blank"><img src="./Assets/images/GitHub-Mark-64px.png" alt="GitHub icon"></a>
-                    <a href= "mailto:dasiasmith023@gmail.com" target="_blank"><img src="./Assets/images/gmail_icon-icons.com_59877.png" alt="Gmail icon"></a>
-                </div>
-            </div>    
-    </main>
-</body>
-    <footer>
-        <h2>Made with ❤️️ by Dasia</h2>
-    </footer>
-</html>
+  </section>
+  <script src="script.js"></script>
+  </body>
+  </html>
